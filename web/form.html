@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <form id="registrationForm">
+        <!-- a form to collect some information -->
+        <h1>Hiking Registration Form</h1>
+        <div>Your name:</div>
+        <input type="text" placeholder="Name" required>
+        <div>E-mail</div>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <div style="width: 90%;">Departure time:</div>
+        <input type="date" required>
+        <div>Choose a trail</div>
+        <select required>
+            <option value="" disabled selected>Select a trail</option>
+            <option value="M">Maclehose Trial</option>
+            <option value="W">Wilson Trail</option>
+            <option value="L">Lantau Trail</option>
+            <option value="H">Hongkong Trail</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Submit successful feedback -->
+    <div id="submitbackgrond" style="background-color: bisque;width: 500px; height: 350px; display: none;">
+        <div id="successMessage" class="success-message" >Submission successful!</div>
+        <img src="../img/form/1742995469284.gif" style="width: 300px;">
+    </div>
+    
+    <!-- After successful submission, it will automatically return to the home page in 5 seconds -->
+    <script src="../js/submit.js"></script>
+</body>
+</html>

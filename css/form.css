@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("../img/form/background.png");
+    background-size: cover;
+    background-position: center;
+
+    /* Layout Settings */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#registrationForm {
+    background: rgba(246, 245, 234, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+}
+
+#registrationForm div {
+    font-size: large;
+}
+
+#registrationForm input {
+    width: 94.5%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+#registrationForm select {
+    width: 99%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+#registrationForm button {
+    width: 99%;
+    padding: 10px;
+    background-color: #c48b19;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#registrationForm button:hover {
+    background-color: #c19a1a;
+}
+
+#submitbackgrond{
+    text-align: center;
+    border-radius: 10px;
+}
+
+.success-message{
+    color: green;
+    font-size: 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: #000000 solid;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hong Kong Four Trails</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cover">
+        <div id="background-container"></div>
+        <!-- call the js file to rotate the backgrond image -->
+        <script src="../js/changebackgrond.js"></script>
+        <div class="head"> <!-- head bar include some information -->
+            <a class="homebutton" href="../web/index.html" title="Home">
+                <img src="../img/maclehose/home.png" width="30px">
+                <span style="margin-left: 10px;">HKFT</span>
+            </a>
+            <span class="topic">
+                Hiking Nature 
+                <img src="../img/cover/topic.png" alt="" style="width: 40px;">
+                Conservation Sustainability
+            </span>
+            <span id="date">
+                <!-- get date from computer -->
+                <script src="../js/getdate.js"></script> /* get date from compter */
+            </span>
+            <span id="temp">
+                <!-- get real-time temperature from Internet -->
+                <script src="../js/gettemp.js"></script>
+            </span>
+            <span style="color: #293A29; margin-left: 0px;margin-right: 10px;">°C</span>
+        </div>
+
+        <!-- the main title -->
+        <div class="cover_title">Hong Kong Four Trails</div>
+        <div id="cover_nav"> 
+            <!-- each trail jump by anchor link -->
+            <div>
+                <a href="../web/maclehose.html" class="label">Maclehose Trail</a>
+                <br><br>
+                <img src="../img/cover/麥理浩徑.jpg" alt="Maclehose Trail">
+            </div>
+            <div>
+                <a href="../web/wilson.html" class="label">Wilson Trail</a>
+                <br><br>
+                <img src="../img/cover/衛奕信徑.jpg" alt="Wilson Trail">
+            </div>
+            <div>
+                <a href="../web/lantau.html" class="label">Lantau Trail</a>
+                <br><br>
+                <img src="../img/cover/鳳凰徑.jpg" alt="Lantau Trail">
+            </div>
+            <div>
+                <a href="../web/hongkong.html" class="label">Hongkong Trail</a>
+                <br><br>
+                <img src="../img/cover/港島徑.jpg" alt="Hongkong Trail">
+            </div>
+        </div>
+
+        <!-- create a sidebar include a register form -->
+        <div class="sidebar">
+            <span>
+                <img src="../img/cover/trumpet.jpg" style="width: 25px;">
+                <a href="../web/form.html" class="register" title="join us now">Hong Kong Four Trails Challenge Registration</a>
+            </span>
+        </div>
+
+        <!-- backgrond music -->
+        <audio id="myAudio" autoplay>
+            <script src="../js/playAudio.js"></script>
+            <source src="../img/mp3/阿梨粤 - 晚风心里吹.mp3" type="audio/mpeg" >
+        </audio>
+    </div>
+
+</body>
+
+</html>

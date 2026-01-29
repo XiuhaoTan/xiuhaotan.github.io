@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    background-color: #f6f5ea;
+}
+
+/* Initialize the top of the page */
+.head{
+    cursor: default;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.homebutton{
+    color: #293A29;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.homebutton:hover{
+    transition-duration: 0.3s;
+    text-shadow: 2px 2px 10px #293A29;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title>h1{
+    font-size: 34px;
+    font-weight: 500;
+    color: #293A29;
+    line-height: 38px;
+    font-family: "Noto Serif TC", sans-serif;
+    margin: 5px 0 10px 5px;
+}
+
+.title>img{
+    width:100px;
+    height:46.67px;
+    margin-right: 20px;
+}
+
+.trailname {
+    color: #293A29;
+    font-size: 20px;
+    font-family: "Noto Serif TC", sans-serif;
+    letter-spacing: 5px;
+    margin-left: 5px;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Initialize the basic parameters of the image */
+.picture {
+    border-radius: 3px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Initialize the basic parameters of the paragraph */
+p {
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 18px;
+    color: #293A29;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 17px;
+    color: #293A29;
+}
+
+.map {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #293A29;
+    font-size: 25px;
+}
+
+.map:hover {
+    text-decoration: underline;
+}
+
+.mapicon {
+    width: 30px;
+}
+
+/* Initialize the road section table and highlight the table header */
+table {
+    color: #293A29;
+    width: 100%;
+    font-size: 1.7vw;
+    border-collapse: collapse;
+}
+
+thead {
+    font-family: "Noto Serif TC", sans-serif;
+    font-size: 2.2vw;
+    font-weight: 900;
+}
+
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4) {
+    text-align: right;
+}
+
+tr {
+    border-top: 1px solid #000;
+}
+
+.sidebar {
+    position: fixed;
+    right: -185px;
+    width: 200px;
+    height: 80px;
+    background-color: #f6f5ea;
+    color: rgb(0, 0, 0);
+    transition: right 0.3s ease;
+    padding: 10px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    bottom: 30px;
+    border-radius: 4px;
+    text-align: right;
+}
+
+.sidebar:hover {
+    right: 0;
+}
